@@ -5,12 +5,15 @@ import reportWebVitals from './reportWebVitals';
 import './components/layout/Sidebar';
 import { Sidebar } from './components/layout/Sidebar';
 import { Content } from './components/layout/Content';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
     <div className="container">
-      <Sidebar />
-      <Content />
+      <Router>
+        <Sidebar />
+        <Content />
+      </Router>
     </div>
   </React.StrictMode>,
   document.getElementById('root')

@@ -34,3 +34,7 @@
 .content{
   @apply bg-purple-50 min-h-screen w-screen;
 }
+
+.centerDiv{
+  @apply text-center;
+}

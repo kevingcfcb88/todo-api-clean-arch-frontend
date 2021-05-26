@@ -23,7 +23,7 @@ export const Title = ({title, titleType}:TitleInterface) => {
     };
 
     return (
-        <div>
+        <div className="centerDiv">
             {titleTag()}
         </div>
     );

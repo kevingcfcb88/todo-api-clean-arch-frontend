@@ -1,10 +1,18 @@
-import * as React from 'react';
-import { Title } from '../common/Title';
-import { TitleTypeEnum } from '../interfaces/CommonInterfaces';
+import {Switch,Route,} from "react-router-dom";
+import {IndexTodo} from '../todo/IndexTodo';
+import {IndexUsers} from '../users/IndexUsers';
 
 export const Content = ()  => {
     return (
     <div className="content">
-        <Title title='Todos de {UserName}' titleType= {TitleTypeEnum.H2}/>
-    </div>);
+        <Switch>
+          <Route path="/todos">
+            <IndexTodo />
+          </Route>
+          <Route path="/users">
+            <IndexUsers />
+          </Route>
+        </Switch>
+    </div>
+    );
 } 
