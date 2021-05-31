@@ -1,6 +1,7 @@
 export interface TitleInterface {
     title: string,
-    titleType: TitleTypeEnum
+    titleType: TitleTypeEnum,
+    darkMode?: boolean
 }
 
 export enum TitleTypeEnum{

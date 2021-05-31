@@ -23,18 +23,42 @@
   }
 }
 
+.darkModeTextTitle{
+    @apply dark:text-gray-300;
+}
+
 .container{
-  @apply flex flex-row bg-red-900;
+  @apply flex flex-row;
 }
 
 .sidebar{
-  @apply bg-green-50 min-h-screen w-52 text-center;
+  @apply min-h-screen w-52 text-center bg-white dark:bg-gray-900;
 }
 
 .content{
-  @apply bg-purple-50 min-h-screen w-screen;
+  @apply min-h-screen w-screen;
 }
 
 .centerDiv{
   @apply text-center;
+}
+
+.addTodo{
+  @apply m-6;
+}
+
+.innnerContainer{
+  
+}
+
+.innerItem{
+  @apply flex flex-row m-6 text-center;
+}
+
+.titleTodo{
+  @apply w-10/12 shadow-md;
+}
+
+.actionsTodo{
+  @apply w-1/12 shadow-md;
 }

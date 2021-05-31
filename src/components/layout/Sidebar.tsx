@@ -7,10 +7,14 @@ export const Sidebar = () => {
 
     return (
         <div className="sidebar">            
-                <Title title="Todos" titleType = {TitleTypeEnum.H2} />
+                <Title title="Todos" titleType = {TitleTypeEnum.H2} darkMode={true}/>
                 <div className="flex flex-col">
-                    <Link to="/todos">See my Todos</Link>
-                    <Link to="/users">See Users</Link>
+                    <Link to="/todos">
+                        <Title title="See my Todos" titleType = {TitleTypeEnum.H4} darkMode={true}/>
+                    </Link>
+                    <Link to="/users">
+                        <Title title="See users" titleType = {TitleTypeEnum.H4} darkMode={true}/>
+                    </Link>
                 </div>
         </div>
     );

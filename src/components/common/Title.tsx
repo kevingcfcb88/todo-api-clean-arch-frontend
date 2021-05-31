@@ -1,7 +1,7 @@
-import * as React from 'react';
+import {FunctionComponent} from 'react';
 import {TitleInterface, TitleTypeEnum} from '../interfaces/CommonInterfaces';
 
-export const Title = ({title, titleType}:TitleInterface) => {
+export const Title : FunctionComponent<TitleInterface> = ({title, titleType, darkMode = false}) => {
 
     const titleTag = () : JSX.Element => {
         switch(titleType){
@@ -22,8 +22,10 @@ export const Title = ({title, titleType}:TitleInterface) => {
         }
     };
 
+    const enableDarkMode : string = darkMode ? "centerDiv darkModeTextTitle" : "centerDiv";
+
     return (
-        <div className="centerDiv">
+        <div className={enableDarkMode}>
             {titleTag()}
         </div>
     );
